@@ -1,0 +1,3 @@
+select Product.Name, Category.Name from Product
+left join ProductInCategory on Product.Code_of_Product = ProductInCategory.Code_of_Product
+left join Category on ProductInCategory.Code_of_Category = Category.Code_of_Category
