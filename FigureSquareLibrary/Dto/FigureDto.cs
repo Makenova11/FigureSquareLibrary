@@ -1,4 +1,6 @@
-﻿namespace FigureSquareLibrary.Dto
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace FigureSquareLibrary.Dto
 {
     /// <summary>
     /// Dto фигуры для вычиления площади.
