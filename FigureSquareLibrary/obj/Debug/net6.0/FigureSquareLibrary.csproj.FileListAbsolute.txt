@@ -1,0 +1,12 @@
+D:\projects\FigureSquareLibrary\FigureSquareLibrary\bin\Debug\net6.0\FigureSquareLibrary.deps.json
+D:\projects\FigureSquareLibrary\FigureSquareLibrary\bin\Debug\net6.0\FigureSquareLibrary.dll
+D:\projects\FigureSquareLibrary\FigureSquareLibrary\bin\Debug\net6.0\FigureSquareLibrary.pdb
+D:\projects\FigureSquareLibrary\FigureSquareLibrary\obj\Debug\net6.0\FigureSquareLibrary.csproj.AssemblyReference.cache
+D:\projects\FigureSquareLibrary\FigureSquareLibrary\obj\Debug\net6.0\FigureSquareLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\FigureSquareLibrary\FigureSquareLibrary\obj\Debug\net6.0\FigureSquareLibrary.AssemblyInfoInputs.cache
+D:\projects\FigureSquareLibrary\FigureSquareLibrary\obj\Debug\net6.0\FigureSquareLibrary.AssemblyInfo.cs
+D:\projects\FigureSquareLibrary\FigureSquareLibrary\obj\Debug\net6.0\FigureSquareLibrary.csproj.CoreCompileInputs.cache
+D:\projects\FigureSquareLibrary\FigureSquareLibrary\obj\Debug\net6.0\FigureSquareLibrary.dll
+D:\projects\FigureSquareLibrary\FigureSquareLibrary\obj\Debug\net6.0\refint\FigureSquareLibrary.dll
+D:\projects\FigureSquareLibrary\FigureSquareLibrary\obj\Debug\net6.0\FigureSquareLibrary.pdb
+D:\projects\FigureSquareLibrary\FigureSquareLibrary\obj\Debug\net6.0\ref\FigureSquareLibrary.dll

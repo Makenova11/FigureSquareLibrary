@@ -20,7 +20,7 @@ namespace FigureSquareLibrary.Models
             {
                 if (IsStraightTriangle(firstSide, secondSide, thirdSide, out firstCathetus, out secondCathetus))
                     return CalculateSquareStraightTriangle(firstCathetus, secondCathetus);
-                CalculateSquareTriangle(firstSide, secondSide, thirdSide);
+                return CalculateSquareTriangle(firstSide, secondSide, thirdSide);
             }
 
             throw new InvalidOperationException("Треугольник с заданными сторонами не существует.");
@@ -50,17 +50,17 @@ namespace FigureSquareLibrary.Models
         /// <param name="cathetus2"> Второй возможный катет. </param>
         /// <returns> Возвращает true, если треугольник прямой.  </returns>
         private bool IsStraightTriangle(
-            double firstSide, double secondSide, double three, out double cathetus1, out double cathetus2)
+            double firstSide, double secondSide, double thirdSide, out double cathetus1, out double cathetus2)
         {
-            firstSide = Math.Pow(firstSide, 2);
-            secondSide = Math.Pow(secondSide, 2);
-            three = Math.Pow(three, 3);
+            var firstSidePow = Math.Pow(firstSide, 2);
+            var secondSidepow = Math.Pow(secondSide, 2);
+            var thirdSidePow = Math.Pow(thirdSide, 2);
             cathetus1 = 0;
             cathetus2 = 0;
 
-            if (firstSide + secondSide == three) { cathetus1 = firstSide; cathetus2 = secondSide; return true; }
-            else if (firstSide + three == secondSide) { cathetus1 = firstSide; cathetus2 = three; return true; }
-            else if (secondSide + three == firstSide) { cathetus1 = secondSide; cathetus2 = three; return true; }
+            if ((firstSidePow + secondSidepow) == thirdSidePow) { cathetus1 = firstSide; cathetus2 = secondSide; return true; }
+            else if ((firstSidePow + thirdSidePow) == secondSidepow) { cathetus1 = firstSide; cathetus2 = thirdSide; return true; }
+            else if ((secondSidepow + thirdSidePow) == firstSidePow) { cathetus1 = secondSide; cathetus2 = thirdSide; return true; }
             else return false;
         }
 

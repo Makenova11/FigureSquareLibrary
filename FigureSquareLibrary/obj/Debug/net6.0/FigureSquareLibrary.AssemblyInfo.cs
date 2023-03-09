@@ -18,6 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyProductAttribute("FigureSquareLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FigureSquareLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("Tests")]
 
 // Создано классом WriteCodeFragment MSBuild.
 
