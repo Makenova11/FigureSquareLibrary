@@ -7,7 +7,7 @@ using Tests.Datas;
 namespace Tests.Tests
 {
     /// <summary>
-    /// Unit-тесты вычисления площади фигуры.
+    /// Unit-С‚РµСЃС‚С‹ РґР»СЏ РІС‹С‡РёСЃР»РµРЅРёСЏ РїР»РѕС‰Р°РґРё С„РёРіСѓСЂС‹.
     /// </summary>
     [TestFixture]
     public class FigureSquareTest
@@ -16,10 +16,10 @@ namespace Tests.Tests
         private IFigureStrategy? _figureStrategy;
 
         /// <summary>
-        /// Тест на подсчёт площади круга при наличие корректных значений.
+        /// РЎС‡РёС‚Р°РµС‚ РїР»РѕС‰Р°РґСЊ РєСЂСѓРіР° СЃ РєРѕСЂСЂРµРєС‚РЅС‹РјРё Р·РЅР°С‡РµРЅРёСЏРјРё.
         /// </summary>
-        /// <param name="figureDto"> Dto со сторонами.</param>
-        /// <param name="expectedValue"> Ожидемое значение площади. </param>
+        /// <param name="figureDto"> Dto СЃ СЂР°РґРёСѓСЃРѕРј.</param>
+        /// <param name="expectedValue"> РћР¶РёРґР°РµРјРѕРµ Р·РЅР°С‡РµРЅРёРµ РїР»РѕС‰Р°РґРё.. </param>
         [TestCaseSource(typeof(FigureTestData), nameof(FigureTestData.CalculateCircleSquare))]
         public void Should_CalculateCircleSquare_When_RadiusIsExist(FigureDto figureDto, double expectedValue)
         {
@@ -34,9 +34,9 @@ namespace Tests.Tests
         }
 
         /// <summary>
-        /// Тест с некорректными значениями радиуса, который ожидаемо выкидывает исключение.
+        /// Р’С‹РєРёРґС‹РІР°РµС‚ РёСЃРєР»СЋС‡РµРЅРёРµ С‚.Рє. РґР°РЅРЅС‹Рµ СЃС‚РѕСЂРѕРЅ РЅРµРєРѕСЂСЂРµРєС‚РЅС‹.
         /// </summary>
-        /// <param name="figureDto"> Dto с некорректными значениями. </param>
+        /// <param name="figureDto"> Dto СЃРѕ Р·РЅР°С‡РµРЅРёСЏРјРё СЃС‚РѕСЂРѕРЅ С„РёРіСѓСЂС‹. </param>
         [TestCaseSource(typeof(FigureTestData), nameof(FigureTestData.IncorrectFigureSideValue))]
         public void Should_ThrowInvalidOperationException_When_ValueIsNotCorrect(FigureDto figureDto)
         {
@@ -51,10 +51,10 @@ namespace Tests.Tests
         }
 
         /// <summary>
-        /// Тест с некорректными значенеями, который ожидаемо выкидывает исключение.
+        /// РЎС‡РёС‚Р°РµС‚ РїР»РѕС‰Р°РґСЊ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР° РєР°Рє РїРѕ С„РѕСЂРјСѓР»Рµ Р“РµСЂРѕРЅР°, С‚Р°Рє Рё РєР°Рє РїРѕР»СѓРїСЂРѕРёР·РІРµРґРµРЅРёРµ РєР°С‚РµС‚РѕРІ..
         /// </summary>
-        /// <param name="figureDto"> Dto с некорректными значениями. </param>
-        /// <param name="expectedValue"> Ожидемое значение площади. </param>
+        /// <param name="figureDto"> Dto СЃРѕ Р·РЅР°С‡РµРЅРёСЏРјРё СЃС‚РѕСЂРѕРЅ С„РёРіСѓСЂС‹. </param>
+        /// <param name="expectedValue"> РћР¶РёРґР°РµРјРѕРµ Р·РЅР°С‡РµРЅРёРµ РїР»РѕС‰Р°РґРјРё. </param>
         [TestCaseSource(typeof(FigureTestData), nameof(FigureTestData.CalculateTriangleSquare))]
         public void Should_CalculateTriangleSquare_When_TriangleSidesIsCorrect(FigureDto figureDto, double expectedValue)
         {
@@ -69,9 +69,9 @@ namespace Tests.Tests
         }
 
         /// <summary>
-        /// Тест с некорректными значениями радиуса, который ожидаемо выкидывает исключение.
+        /// Р’С‹РєРёРґС‹РІР°РµС‚ РёСЃРєР»СЋС‡РµРЅРёРµ С‚.Рє. С‚СЂРµСѓРіРѕР»СЊРЅРёРєР° СЃ Р·Р°РґР°РЅРЅС‹РјРё СЃС‚РѕСЂРѕРЅР°РјРё РЅРµ СЃРєС‰РµСЃС‚РІСѓРµС‚..
         /// </summary>
-        /// <param name="figureDto"> Dto с некорректными значениями. </param>
+        /// <param name="figureDto"> Dto СЃРѕ Р·РЅР°С‡РµРЅРёСЏРјРё СЃС‚РѕСЂРѕРЅ С„РёРіСѓСЂС‹. </param>
         [TestCaseSource(typeof(FigureTestData), nameof(FigureTestData.IncorrectTriangleSidesValue))]
         public void Should_ThrowInvalidOperationException_When_TriangleIsNotExist(FigureDto figureDto)
         {
